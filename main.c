@@ -149,7 +149,7 @@ void title()
     {
         printf("=");
     }
-    printf(" KIIT University Management System ");
+    printf(" University Management System ");
     for (int i = 1; i <= 19; i++)
     {
         printf("=");
