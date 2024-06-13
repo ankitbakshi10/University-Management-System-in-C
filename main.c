@@ -996,7 +996,7 @@ void s_addDetails()
         }
         if (userID == s_user.userID) {
             found = 1;
-            printf("Enter Name: ");
+            printf("Enter Name (without spaces) : ");
             scanf(" %[^\n]s", name);
             strcpy(s_user.name, name);
 
@@ -1192,7 +1192,7 @@ void s_modifyDetails()
 
                 switch (choice) {
                 case 1:
-                    printf("Enter new Name: ");
+                    printf("Enter new Name (without spaces) : ");
                     scanf(" %[^\n]s", new_name);
                     strcpy(s_user.name, new_name);
                     break;
@@ -1384,7 +1384,7 @@ void p_addDetails()
     while (fscanf(fp, "%d %s %s %s %d", &p_user.userID, p_user.passWord, p_user.name, p_user.dept, &p_user.expr) != EOF) {
         if (userID == p_user.userID) {
             found = 1;
-            printf("Enter Name: ");
+            printf("Enter Name (without spaces) : ");
             scanf(" %[^\n]s", name);
             strcpy(p_user.name, name);
 
@@ -1543,7 +1543,7 @@ void p_modifyDetails()
 
                 switch (choice) {
                 case 1:
-                    printf("Enter new Name: ");
+                    printf("Enter new Name (without spaces) : ");
                     scanf(" %[^\n]s", new_name);
                     strcpy(p_user.name, new_name);
                     break;
